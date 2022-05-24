@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MEDBLOC</title>
+    <link rel="icon" type="image/png" href="images/MediBloc-icon.png" sizes="196x196" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- own css -->
+    <link href="css/homes.css" rel="stylesheet">
+    <link href="css/topnav.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <style>
+        
+    #banner{
+        background: url(images/resources/bg.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        padding-top: 100px;
+    }
+
+
+@media screen and (max-width:960px) {
+    .footer-container {
+        padding-top: 500px;
+    }
+    .right-col {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+   
+    .bordersep {
+        margin-top: auto;
+        height: 0px;
+        width: 10%;
+        color: black;
+    }
+    .left-col {
+        width: 100%;
+        text-align: center;
+    }
+   
+    .slidershow {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .middle {
+        margin-left: 0%;
+    }
+    .middle h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .border {
+        width: 100px;
+        height: 4px;
+        background: #fc5c65;
+        margin-left: 140px;
+    }
+    .border1 {
+        width: 100px;
+        height: 4px;
+        background: #fc5c65;
+        margin-left: 210px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+    @media screen and (max-width:700px) {
+    #banner {
+        background: url(images/resources/backgrd.png);
+        max-width: 100%;
+        height: auto;
+    }
+    .banner-text {
+        text-align: center;
+        color: white;
+        padding-top: 180px;
+    }
+    .banner-text h1 {
+        padding-top: 5px;
+        font-size: 40px;
+        padding-left: 20px;
+    }
+    .banner-text p {
+        font-size: 25px;
+        padding-left: 18px;
+    }
+}
+    </style>
+</head>
+
+<body>
+   <!--<div class="loader">
+        <img src="images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div> ---> 
+    <header >                                     
+        <div class=" header-container">
+            <section class="iconms" >
+                <img src="images/MediBloc-icon.png" alt="" class="iconm">  
+                <h1> Medbloc</h1>
+                <div id="imenu">
+                    <i class="fa fa-fw fa-bars" ></i>
+                </div>
+            </section>
+        
+        <nav>
+            <ul id="routes" class="routes-flex">
+                <li> <a href="">Top Pharma Companies</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Blog</a></li>
+                <li> <a href="">Contact Us</a></li>
+                <li><a href="accounts/signinregister.html"><i class="fa fa-fw fa-user"></i>&nbsp;Login</a></li> 
+            </ul>
+        </nav>
+    </div> 
+    </header>
+    
+   
+    <section id="banner">
+        <div class="banner-text">
+            <h1>MEDBLOC</h1>
+            <p>Save yourself from being Counterfeited!!</p>
+        </div>
+    </section>
+
+
+
+    <section class="slidershow middle">
+        <h1>WHY MEDBLOC ??</h1>
+
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <div class="slide s1">
+                <img src="images/index/fakemed1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/index/fakemed2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/index/fakemed3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/index/fakemed4.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/index/fakemed5.jpg" alt="">
+            </div>
+        </div>
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+        </div>
+
+        </div>
+
+    </section>
+    <div class="bordersep"></div>
+    <footer>
+        <div class=" footer-container">
+            <div class="left-col">
+                <h1>Med<span>Bloc</span></h1>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="rights-text">© 2022 Created By PECCS Dev All Rights Reserved.</p>
+            </div>
+
+            <div class="right-col">
+                <h1>Our Newsletter</h1>
+
+                <p>Enter Your Email to get our news and updates.</p>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="txtbx" placeholder="Enter Your Email">
+                    <input type="submit" class="btnsubmit" placeholder="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+   <script src="js/navmenu.js"></script> 
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            //loader.className += "hidden"; // class "loader hidden"
+        });
+    </script>
+</body>
+
+</html>

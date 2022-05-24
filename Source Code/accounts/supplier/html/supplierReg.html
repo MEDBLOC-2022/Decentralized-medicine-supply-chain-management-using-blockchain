@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" type="image/png" href="../../../images/MediBloc-icon.png" sizes="196x196" />
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+   <!--<div class="loader">
+        <img src="images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div>--> 
+  
+    <div class="wrapper">
+        <div class="title">
+            Supplier Registration Form
+        </div>
+        <form id="supplierform">
+            <div class="inputs">
+                <div class="inputfield">
+                    <label>First Name:</label>
+                    <input id="fname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Last Name:</label>
+                    <input id="lname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Email Address:</label>
+                    <input id="emailid" type="email" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Address:</label>
+                    <textarea id="address" class="textarea" required></textarea>
+                </div>
+                <div class="inputfield">
+                    <label>Postal Code:</label>
+                    <input id="postalcode" type="number" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>No. of medicines supplied in a year:</label>
+                    <input id="medno" type="number" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number:</label>
+                    <input id="phno" type="number" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Government approved License:</label>
+                    <input id="govlic" type="file" name="f" required>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Register" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+
+    <script src="../js/supplierRegAuth.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            //loader.className += " hidden"; // class "loader hidden"
+        });
+    </script>
+
+</body>
+
+
+</html>

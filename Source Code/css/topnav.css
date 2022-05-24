@@ -1,0 +1,102 @@
+@media screen and (min-width:980px){
+  .header-container {     
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    height: 60px;
+    width: 100%;     
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(293, 91%, 41%, 0.75); 
+ }
+.header-container *{
+     display: inline;
+ }
+ .avatar {
+  padding: 5px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.iconms h1{
+ font-size: 30px;
+ }
+.routes-flex{   
+display: flex;   
+list-style: none;
+align-items: center;
+padding-right: 5px;
+} 
+.routes-flex > li{
+  font-size: 20px;
+  padding: 5px 10px 5px 20px;
+}
+.routes-flex > li > a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+.routes-flex > li > a:hover {
+  color: black;
+  text-decoration: none;
+}
+.iconms{
+  display: flex;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+}
+
+.iconm{
+     width: 50px;
+     height: 50px;
+ }
+ #imenu{
+   display: none;
+ }
+}
+@media screen and (max-width:980px) {
+ 
+  .header-container {     
+    width: 100%;     
+    position: inherit;
+    background-color: hsla(293, 91%, 41%, 0.75); 
+ }
+  .iconms{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+  }
+  #imenu{
+    color: white;
+     
+  }
+  .iconm{
+       width: 50px;
+       height: 50px;
+   }
+  .iconms h1{
+   font-size: 30px;
+   }
+ 
+    .routes-flex > li{
+      list-style: none;
+      align-items: center;
+      padding-right: 5px;
+      float: none;
+      display: block;
+      font-size: 20px;
+      padding: 5px 10px 5px 20px;
+    }
+    .routes-flex > li > a {
+     
+      color: antiquewhite;
+      text-decoration: none;
+    }
+    .routes-flex > li > a:hover {
+      color: black;
+      text-decoration: none;
+    }
+}

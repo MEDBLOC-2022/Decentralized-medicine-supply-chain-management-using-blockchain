@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Details</title>
+    <link rel="icon" type="image/png" href="../../../images/MediBloc-icon.png" sizes="196x196" />
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <!--<div class="loader">
+        <img src="images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div>-->
+    
+    <div class="wrapper">
+        <div class="title">
+           Medicine Details
+        </div>
+        <form id="medicineform">
+            <div class="inputs">
+                <div class="inputfield">
+                    <label>Company Name:</label>
+                    <input id="cname" type="text" class="input" required pattern="[A-Za-z]{1,25}" title="Company name only be an alphabet">
+                </div>
+                <div class="inputfield">
+                    <label>Medicine Name:</label>
+                    <input id="medname" type="text" class="input" required pattern="[A-Za-z]{1,25}" title="Medicine name only be an alphabet">
+                </div>
+                <div class="inputfield">
+                    <label>Quantity:</label>
+                    <input id="dosage" type="number" class="input" required pattern="\d+">
+                </div>
+                <div class="inputfield">
+                    <label>Batch no:</label>
+                    <input id="bno" type="number" class="input" required pattern="\d+">
+                </div>
+               
+                <div class="inputfield">
+                    <label>Mfg date:</label>
+                    <input id="mfdate" type="date" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Exp date:</label>
+                    <input id="exdate" type="date" class="input" required>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+                    <p>I agreed to terms and conditions the above details are correct</p>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="submit" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/web3.min.js"></script>
+    <script src="../../../js/truffle-contract copy.js"></script>
+    <script src="../js/mandetails.js" ></script>
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+           // loader.className += " hidden"; // class "loader hidden"
+        });
+       
+    </script>
+
+</body>
+
+</html>

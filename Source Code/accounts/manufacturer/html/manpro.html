@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/upload.css">
+    <link rel="icon" type="image/png" href="../../../images/MediBloc-icon.png" sizes="196x196" />
+    <title>Manufacturer</title>
+    <link href="../../../css/topnav.css" rel="stylesheet">
+    <style>
+.container{
+    position: relative;
+	overflow: hidden;
+    padding: 80px 20px;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+.tabled{
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+.tabled th  {
+    padding: 6pt;
+    border: 2px solid black;
+}
+.tabled .tbd  {
+    display: flex;   
+}
+.tabled td{
+    align-content: center; 
+    padding: 6pt;
+    border: 2px solid black;
+}
+.td{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    align-content: center;   
+}
+
+.buton{
+    display: flex;
+    justify-content: flex-end;
+    padding:0px 10px 15px 0px;
+}
+.Qbuton{
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    
+}
+    </style>
+</head>
+
+<body>
+   <!-- <div class="loader">
+        <img src="images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div>-->
+    <header class=" header-container">                 
+        <section class="iconms" >
+         <img src="../../../images/MediBloc-icon.png" alt="" class="iconm">  
+         <h1> Medbloc</h1>
+        </section>                
+         <nav >
+             <ul id="routes" class="routes-flex">
+                 <li id="manname">Welcome Manufacturer</li>
+                 <li><a href="accounts/../../../signinregister.html" onclick="logout"><i class="fa fa-fw fa-user"></i>&nbsp;Logout</a></li>  
+             </ul>
+         </nav>
+     </header>
+     <div class="container" id="container">
+     <div class="buton"><button id="myButton" >ADD Medicine</button></div>
+     <div id="tabe">
+     <table id="tabledm" class="tabled">
+        <thead>
+                <th>S.no</th>
+                <th>Company Name</th>
+                <th>Medicine name</th>
+                <th>Quantity</th>
+                <th>Batch no</th>
+                <th>MFG date</th>
+                <th>EXP date</th>
+                <th>Generate QR</th>
+                
+        </thead>
+   <tbody id="tbd">
+
+   </tbody>
+     </table>
+     </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script>
+    var online = navigator.onLine;
+    if (online == false) {alert("Sorry, we currently do not have Internet access.");location.reload(); }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/web3.min.js"></script>
+    <script src="../../../js/truffle-contract copy.js"></script>
+    <script src="../js/manpro.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Account</title>
+	<link rel="icon" type="image/png" href="../images/MediBloc-icon.png" sizes="196x196" />
+    <link rel="stylesheet" href="signinregister.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../css/topnav.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <header>
+        <div class=" header-container">                 
+            <section class="iconms" >
+             <img src="../images/MediBloc-icon.png" alt="" class="iconm">  
+             <h1> Medbloc</h1>
+             <div id="imenu">
+                <i class="fa fa-fw fa-bars" ></i>
+            </div>
+            </section>                
+             <nav >
+                 <ul  class="routes-flex" id="routes">
+                    <li><a href="../index.html">Home</a></li>
+                     <li> <a href="../nav/companylist.html">Top Pharma Companies</a></li>
+                     <li><a href="../nav/about.html">About Us</a></li>
+                     <li><a href="../nav/blogpage.html">Blog</a></li>
+                     <li> <a href="../nav/contactus.html">Contact Us</a></li>
+                 </ul>
+             </nav>
+           </div>
+        </header>
+<section id="bcard">
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img">
+                <img src="../images/signinregister/consumer.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">
+                    Consumer</div>
+                <div class="sub-title">
+                    _______________</div>
+                <p>Consumers can signin or register to our website by clicking Consumer button and can check whether the medicine in their hands is placebo just by simple Qr code scanning..
+                </p>
+                <div class="btn">
+                    <a href="consumer/consumerSignin.html">
+                        <button>Consumer</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="../images/signinregister/manufacturer.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">
+                    Manufacturer</div>
+                <div class="sub-title">
+                    _________________</div>
+                <p>
+                    Manufacturers can signin or register to our website by clicking Manufacturer button and can download their medicine's Qr code image. Just by following simple steps..</p>
+                <div class="btn">
+                    <a href="manufacturer/manufacturerSignin.html">
+                        <button>Manufacturer</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="../images/signinregister/supplier.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">
+                    Supplier</div>
+                <div class="sub-title">
+                    _______________</div>
+                <p>
+                    Supplier can signin or register to our website by clicking Supplier button and can check the medicines they received is placebo just by simple scanning the Qr code printed on medicine..</p>
+                <div class="btn">
+                    <a href="supplier/supplierSignin.html">
+                        <button>Supplier</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../js/navmenu.js"></script>
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000, //5000ms = 5s;
+            autoplayHoverPause: true,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "name": "medbloc",
+    "version": "1.0.0",
+    "description": "dapp project",
+    "main": "App.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "@truffle/contract": "^4.3.13",
+        "core-js": "^3.22.3",
+        "lite": "^4.0.5",
+        "server": "^1.0.37",
+        "truffle-contract": "^4.0.31",
+        "web3": "^2.0.0-alpha",
+        "web3-min-js": "^1.0.0"
+    },
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    },
+    "scripts": {
+        "dev": "lite-server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}

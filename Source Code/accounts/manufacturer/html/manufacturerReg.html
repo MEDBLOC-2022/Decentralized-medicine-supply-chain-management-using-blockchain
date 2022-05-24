@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="icon" type="image/png" href="../../../images/MediBloc-icon.png" sizes="196x196" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <div class="loader">
+        <img src="../../../images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div>
+   
+    <div class="wrapper">
+        <div class="title">
+            Manufacturer Registration Form
+        </div>
+        <form id="manufacturerform" action="" method="GET">
+            <div class="inputs">
+                <div class="inputfield">
+                    <label>First Name:</label>
+                    <input id="fname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Last Name:</label>
+                    <input id="lname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Email Address:</label>
+                    <input id="emailid" type="email" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Company Name:</label>
+                    <input id="cname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Company Address:</label>
+                    <textarea id="caddress" class="textarea" required></textarea>
+                </div>
+                <div class="inputfield">
+                    <label>Postal Code:</label>
+                    <input id="postalcode" type="number" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>No. of medicines manufactured in a year:</label>
+                    <input id="medno" type="number" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number:</label>
+                    <input id="phno" type="number" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Government License:</label>
+                    <input id="govlic" type="file" name="f" required>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+
+    <script src="../js/manufacturerRegAuth.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
+    </script>
+</body>
+
+
+</html>
